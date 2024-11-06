@@ -1,0 +1,119 @@
+body,
+html {
+  background-color: #333;
+  margin: auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  color: #fff;
+}
+.wrapper {
+  width: 400px;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+@media only screen and (max-width: 800px) {
+  .wrapper {
+    width: 80%;
+  }
+}
+/** form */
+.wrapper > header {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.wrapper > header > h3 {
+  margin: 0px;
+  margin-right: 10px;
+  font-size: 25px;
+  padding: 0px;
+  display: inline;
+}
+
+.wrapper > header > span {
+  font-size: 12px;
+  color: #333;
+  border-radius: 5px;
+  padding: 2px;
+  font-weight: bold;
+  background-color: #ffc83d;
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+}
+.input-box > input {
+  width: 100%;
+  background-color: #dedede;
+  border-radius: 100px;
+  padding: 10px 100px 10px 20px;
+  line-height: 1;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+.input-box > button {
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  bottom: 3px;
+  border: 0;
+  background: #00d26a;
+  color: #fff;
+  outline: none;
+  margin: 0;
+  padding: 0 10px;
+  border-radius: 100px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+/** list */
+.wrapper > ul {
+  padding: 0px;
+}
+.wrapper > ul > li {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.wrapper > ul > li > .left {
+  width: 30px;
+}
+.wrapper > ul > li > .left > button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.wrapper > ul > li > .center {
+  width: 250px;
+}
+
+.wrapper > ul > li > .center.strike {
+  text-decoration-line: line-through;
+  text-decoration-thickness: 3px;
+  text-decoration-color: #00d26a;
+}
+.wrapper > ul > li > .right {
+  display: flex;
+  flex-direction: row;
+  width: 100px;
+}
+.wrapper > ul > li > .right > span {
+  width: 30%;
+}
+.wrapper > ul > li > .right > span > button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
